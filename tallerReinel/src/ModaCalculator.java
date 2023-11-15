@@ -2,6 +2,15 @@ public class ModaCalculator {
 
     public static void main(String[] args) {
         
+        /*
+         * Solución ejercicio 10_a del taller 6_a
+         * Descripción:
+         *  Hacer un programa que calcule la moda de una cantidad de números aleatorios si no hay
+         *  moda que genere 3 más si la hay que muestre por teclado el siguiente mensaje (Debe haber
+         *  otra forma de almacenar datos en vez de usar 50 variables).
+         */
+        
+        
         int totalNumbers = 50;  // Número inicial de datos aleatorios
         boolean modaFound = false;  // Bandera para verificar si se encontró la moda
         int moda = 0;  // Variable para almacenar la moda
@@ -26,11 +35,10 @@ public class ModaCalculator {
                 case 9: count9++; break;
                 case 10: count10++; break;
             }
+            
         }
         
         while (!modaFound) {  // Mientras no se haya encontrado la moda
-            
-            
             
             // Determinar el número con la mayor cantidad de ocurrencias
             if (count1 > maxCount) { maxCount = count1; moda = 1; }
@@ -61,9 +69,7 @@ public class ModaCalculator {
             
             if (modaCount > 1) {
 
-                System.out.println(". Debe haber otra forma de almacenar datos en vez de usar 50 variables.");
-
-                
+                System.out.println("- Debe haber otra forma de almacenar datos en vez de usar 50 variables.");
 
                 for (int i = 0; i < 3; i++) {
                     int randomNumber = (int) (Math.random() * 10) + 1;
